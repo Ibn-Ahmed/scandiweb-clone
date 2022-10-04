@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-family: "inter", sans-serif;
+}
+
+.overall {
+  background: linear-gradient(#EBEFF6, #FFF);
+  max-width: 100%;
+  max-height: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+nav .logo a {
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #E04F4F;
+}
+nav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+}
+nav .menu .hamburger span {
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  background-color: #10142C;
+  margin: 0.5rem;
+}
+
+.intro {
+  margin-block: 5rem;
+  padding-inline: 6rem;
+  width: 1024px;
+  max-width: 100%;
+}
+.intro .intro-msg {
+  font-family: "Secular one", sans-serif;
+  font-weight: 400;
+  font-size: 5.5rem;
+  line-height: 6rem;
+  color: #10142C;
+}
+.intro .intro-msg span {
+  opacity: 0.3;
+}
+.intro .diamond {
+  position: relative;
+  width: 100%;
+}
+.intro .diamond img {
+  position: absolute;
+  right: 7rem;
+}
+.intro .diamond .angle {
+  display: flex;
+  flex-direction: column;
+}
+.intro .diamond .angle i {
+  font-size: 2.5rem;
+  margin-bottom: -1.5rem;
+}

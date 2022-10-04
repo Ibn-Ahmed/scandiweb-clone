@@ -1,0 +1,39 @@
+
+
+.intro {
+    margin-block: 5rem;
+    padding-inline: 6rem;
+    width: 1024px;
+    max-width: 100%;
+    .intro-msg {
+        font-family: 'Secular one', sans-serif;
+        font-weight:400;
+        font-size: 5.5rem;
+        line-height: 6rem;
+        color: $nav-color;
+
+        span {
+            opacity: .3;
+        }
+
+    }
+    .diamond {
+        position:relative;
+        width:100%;
+
+        img {
+            position:absolute;
+            right:7rem;
+        }
+        .angle {
+            display: flex ;
+            flex-direction: column;
+            i {
+                font-size: 2.5rem;
+                margin-bottom: -1.5rem;
+            }
+        }
+        
+
+    }
+}
