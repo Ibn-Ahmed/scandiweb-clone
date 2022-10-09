@@ -3,3 +3,23 @@
     align-items: center;
     justify-content: $jc;
 }
+
+
+$breakpoints:(
+"largestScreen":"2560px",
+"largeScreen":"1440px",
+"mediumScreen":"767px",
+"tablet":"992px",
+);
+
+@mixin max($size) {
+    @media (max-width: map-get($breakpoints,$size)) {
+        @content;
+    }
+}
+
+@mixin min($size) {
+    @media (min-width: map-get($breakpoints,$size)) {
+        @content;
+    }
+}

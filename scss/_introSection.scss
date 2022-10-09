@@ -1,16 +1,26 @@
 
 
 .intro {
-    margin-block: 5rem;
-    padding-inline: 6rem;
-    width: 1024px;
-    max-width: 100%;
+    margin-block: 4rem;
+    padding-inline: 2rem;
+    width: auto;
+    max-width: 65.25rem;
+    @include min(largeScreen) {
+        margin: 4rem auto;
+    }
+
     .intro-msg {
         font-family: 'Secular one', sans-serif;
         font-weight:400;
         font-size: 5.5rem;
+        @include max(mediumScreen) {
+            font-size: 1.875rem;
+            line-height: 2.1875rem;
+            font-weight: 400;
+        }
         line-height: 6rem;
         color: $nav-color;
+        line-height: 6rem;
 
         span {
             opacity: .3;
@@ -18,19 +28,44 @@
 
     }
     .diamond {
-        position:relative;
-        width:100%;
 
-        img {
-            position:absolute;
-            right:7rem;
-        }
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8rem;
+ img {
+    @include max(mediumScreen) {
+        width: 6rem;
+        margin-top: 5rem;
+}
+ }
+      
+    
+
+
+       
         .angle {
-            display: flex ;
-            flex-direction: column;
+            position: relative;
+            margin-top: -7.3rem;
+            align-items: center;
+            margin-left:50%;
+            @include max(tablet) {
+                margin-left:0;
+            }
             i {
-                font-size: 2.5rem;
-                margin-bottom: -1.5rem;
+                font-size: 1.5rem;
+                margin-bottom: -1.3rem;
+            }
+            i:first-child {
+                position: absolute;
+                animation: arrow1  2s ease-in-out infinite;
+            }
+            i:last-child {
+                position: absolute;
+                top: 9px;
+            animation: arrow2  2s ease-in-out infinite;
+
             }
         }
         

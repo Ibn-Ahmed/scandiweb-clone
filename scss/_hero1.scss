@@ -1,0 +1,191 @@
+
+.unicorn-container {
+    width: min(100%, 90rem);
+    margin: 0 auto;
+
+    section {
+        // overflow-y: hidden;
+        // background-color: $color-div1;
+        // width: auto;
+        // border-bottom-left-radius: 368px;
+        // border-top-left-radius: 368px;
+        // position:relative;
+        // display: flex;
+        // column-gap: 10rem;
+ 
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    // width: 61.25rem;
+    @include min(tablet) {
+        width: max(59rem, 90%);
+    }
+    max-width: 100%;
+    min-height: 368px;
+    margin-left: auto;
+    padding-right: 16px;
+    border-top-left-radius: 50rem;
+    border-bottom-left-radius: 50rem;
+    background-color: #3f4aaf;
+    }
+}
+
+.txt-container {
+    margin-left: 4rem;
+    margin-top:2rem;
+    @include max(mediumScreen) {
+        display: none;
+    }
+}
+
+.unicorn-area {
+
+   
+    .unicorn-img {
+        img {
+            margin-top:4rem;
+        }
+    }
+ 
+    .unicorn-txt-container {
+        display: grid;
+        gap: 1rem;
+        margin-top: 2rem;
+        p:first-child {
+            font-family: 'Secular One';
+            font-size:2rem;
+            line-height: 2.5rem;
+            color:#FFF;
+
+        }
+        p:last-child {
+            font-family: 'Secular One';
+            font-size:1.25rem;
+            line-height: 1.5rem;
+            color: #FFF;
+        }
+}
+
+}
+
+.our-help {
+    width: 90%;
+    position: relative;
+    .our-help-container {
+        width:65%;
+        position:absolute;
+        right: 0;
+        top: -4rem;
+    }
+    .unicorn-arrow {
+        img {
+        margin-left: 2rem;
+
+        }
+    }
+
+    .container {
+        color: $nav-color;
+        ul {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin:0;
+            
+            li:first-child {
+                font-family: 'Secular One';
+                font-size: 1.25rem;
+                font-weight: 400;
+            }
+        }
+        .colored1 {
+            background-color: $technology-color;
+            border-radius: 200px;
+            padding: 0 .4rem;
+            font-size:.9rem;
+            margin-left:1rem;
+            
+        }
+        .colored2 {
+            background-color: $acquisition-color;
+            border-radius: 200px;
+            padding: 0 .4rem;
+            font-size:.9rem;
+            margin-left:1rem;
+            
+        }
+        .colored3 {
+            background-color: $customer-color;
+            border-radius: 200px;
+            padding: 0 .4rem;
+            font-size:.9rem;
+            margin-left:1rem;
+        }
+        .colored4 {
+            background-color: $data-color;
+            border-radius: 200px;
+            padding: 0 .4rem;
+            font-size:.9rem;
+            margin-left:1rem;
+        }
+        p {
+            >span {
+                display: block;
+                padding-top:2rem;
+            }
+        }
+    }
+
+}
+
+.btn {
+    @include max(tablet) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+            }
+    margin-top:5rem;
+    button {
+        background: white;
+        font-weight: bold;
+    border: 2px solid $btn-color;
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    color: $btn-color;
+    cursor: pointer;
+    &:hover {
+        background-color: $btn-color;
+        color: #FFF;
+        transition:.5s ease-in-out;
+    }
+
+    }
+    p {
+        
+        display: inline;
+        color:$nav-color;
+        padding-left:1rem;
+        >span {
+        font-weight: bold;
+            font-size: 0.9rem;
+            padding-right:.5rem ;
+            position:relative;
+        }
+        span::before {
+            content: "";
+            background-color: $nav-color;
+            width:95%;
+            height:2px;
+            position:absolute;
+            bottom:-3px;
+           
+        }
+        
+    }
+    p:active {                   
+        color:red;
+    }
+   
+}
+
