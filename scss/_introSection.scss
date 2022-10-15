@@ -9,18 +9,18 @@
         margin: 4rem auto;
     }
 
-    .intro-msg {
+    .intro-msg {  
+        color: $nav-color;
+        font-size: 1.875rem;
+        line-height: 2.1875rem;
+        font-weight: 400;
+        @include min(mediumScreen) {
         font-family: 'Secular one', sans-serif;
         font-weight:400;
         font-size: 5.5rem;
-        @include max(mediumScreen) {
-            font-size: 1.875rem;
-            line-height: 2.1875rem;
-            font-weight: 400;
+        line-height: 6rem;
+
         }
-        line-height: 6rem;
-        color: $nav-color;
-        line-height: 6rem;
 
         span {
             opacity: .3;

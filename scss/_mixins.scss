@@ -8,8 +8,11 @@
 $breakpoints:(
 "largestScreen":"2560px",
 "largeScreen":"1440px",
-"mediumScreen":"767px",
+"mediumScreen":"769px",
+"mediumScreen1":"770px",
+"mediumScreen2":"789px",
 "tablet":"992px",
+"smallScreen":"480px"
 );
 
 @mixin max($size) {
