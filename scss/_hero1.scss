@@ -253,6 +253,11 @@
             font-size: 0.9rem;
             padding-right:.5rem ;
             position:relative;
+            cursor: pointer;
+
+            &:hover {
+                color: $btn-color;
+            }
         }
         span::before {
             content: "";
@@ -265,9 +270,7 @@
         }
         
     }
-    p:active {                   
-        color:red;
-    }
+    
    
 }
 

@@ -1,0 +1,85 @@
+.know-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:62em) {
+            flex-direction: column;
+            gap: 3rem;
+            .holder {
+                img {
+                    width: 100%;
+                }
+            }
+    }
+    .holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img {
+            max-width: 80%;
+        }
+        h3 {
+            font-family: "Secular One";
+            text-align: center;
+        }
+        
+    }
+    .holder:hover {
+        h3 {
+            color:$btn-color;
+        }
+    }
+    
+}
+.know-us-txt {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0;
+    p {
+        font-weight: 400;
+        font-family: "Secular One";
+        font-size: 2rem;
+        
+    }
+}
+
+.rudolfs-txt {
+    p {
+        font-size:1.25rem !important;
+    }
+}
+
+.rudolfs {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 2rem;
+    .account-manager {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        img {
+            width: 30%;
+
+        }
+        .rudolfs-title {
+            h4 {
+                margin:0 !important;
+            }
+            p {
+                margin: 2px 0;
+                opacity: .5;
+            }
+        }
+    }
+    .rudolfs-btn {
+
+    }
+}

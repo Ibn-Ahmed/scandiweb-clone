@@ -16,14 +16,24 @@ li {
 
 .overall {
   background: linear-gradient(#EBEFF6, #FFF);
-  max-width: 100%;
+  width: min(100%, 90rem);
+  margin: 0 auto;
 }
 
+nav {
+  position: relative;
+}
 nav .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  position: fixed;
+  top: 0;
+  width: min(100%, 90rem);
+  margin: 0 auto;
+  z-index: 99;
+  background-color: #FFF;
+  padding: 1rem 1rem 1rem 0rem;
 }
 nav .logo a {
   font-family: "inter", sans-serif;
@@ -284,6 +294,10 @@ nav .menu .hamburger span {
   font-size: 0.9rem;
   padding-right: 0.5rem;
   position: relative;
+  cursor: pointer;
+}
+.btn p > span:hover {
+  color: #E04F4F;
 }
 .btn p span::before {
   content: "";
@@ -292,9 +306,6 @@ nav .menu .hamburger span {
   height: 2px;
   position: absolute;
   bottom: -3px;
-}
-.btn p:active {
-  color: red;
 }
 
 .dreams-intro .dreams-intro-txt p {
@@ -346,16 +357,15 @@ nav .menu .hamburger span {
   background-color: #E4002B !important;
 }
 .themet .img-parent {
-  width: 90% !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
   position: relative !important;
-  top: 3rem;
-  right: 2rem;
-  overflow: hidden;
 }
 .themet .img-parent img {
-  width: 34rem !important;
-  bottom: 1rem !important;
-  left: -4rem !important;
+  width: 100% !important;
 }
 
 .furniture {
@@ -449,11 +459,16 @@ nav .menu .hamburger span {
   }
   .side-curve-right .side-curve-right-image {
     position: relative;
+    width: 100%;
+    height: 100%;
   }
   .side-curve-right .side-curve-right-image img {
     width: 100%;
-    position: relative;
-    left: 4rem;
+    position: absolute;
+    -o-object-fit: contain;
+       object-fit: contain;
+    right: -2rem;
+    bottom: -1rem;
   }
 }
 @media (min-width: 770px) {
@@ -500,6 +515,280 @@ nav .menu .hamburger span {
     color: #FFF;
   }
 }
+.dreams-btn {
+  width: 100% !important;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.diamond3 {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 769px) {
+  .diamond3 {
+    display: none;
+  }
+}
+
+.hire-us .hire-us-info {
+  text-align: center;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hire-us .hire-us-info h3 {
+  font-family: "Secular One";
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.hire-us .hire-us-info p {
+  font-family: "Secular One";
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 0;
+}
+.hire-us .team-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 28.1875em) {
+  .hire-us .team-circle {
+    display: none;
+  }
+}
+.hire-us .team-circle .stars-left {
+  display: grid;
+  width: 10%;
+  position: relative;
+}
+.hire-us .team-circle .stars-left img {
+  position: absolute;
+}
+.hire-us .team-circle .stars-left img:first-child {
+  top: -5rem;
+  left: -5rem;
+}
+.hire-us .team-circle .stars-left img:nth-child(2) {
+  top: 0rem;
+}
+.hire-us .team-circle .stars-left img:nth-child(3) {
+  bottom: -8rem;
+  left: -5rem;
+}
+.hire-us .team-circle .stars-left img:last-child {
+  top: 10rem;
+  left: 4rem;
+}
+.hire-us .team-circle .circle {
+  width: 26.625rem;
+  height: 26.625rem;
+  border-radius: 50%;
+  background-color: #F0F1F9;
+  position: relative;
+}
+.hire-us .team-circle .circle img {
+  height: 6rem;
+  width: 6rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+}
+.hire-us .team-circle .circle img:first-child {
+  left: 19rem;
+  top: 2rem;
+}
+.hire-us .team-circle .circle img:nth-child(2) {
+  left: 21rem;
+  bottom: 6rem;
+}
+.hire-us .team-circle .circle img:nth-child(3) {
+  left: 7px;
+  top: 20rem;
+}
+.hire-us .team-circle .circle img:nth-child(4) {
+  left: -1rem;
+  top: 6rem;
+}
+.hire-us .team-circle .circle .circle-even {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.hire-us .team-circle .circle .circle-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+}
+.hire-us .team-circle .circle .circle-content .pm {
+  border: 1px solid transparent;
+  background-color: #909AF3;
+  border-radius: 40%;
+  padding: 4px 10px;
+}
+.hire-us .team-circle .circle .circle-content .circle-content-txt {
+  max-width: 18.75rem;
+}
+.hire-us .team-circle .circle .circle-content .circle-content-txt p {
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+.hire-us .team-circle .circle .circle-content img {
+  position: static;
+  width: 3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hire-us .team-circle .stars-right {
+  display: grid;
+  width: 10%;
+  position: relative;
+}
+.hire-us .team-circle .stars-right img {
+  position: absolute;
+}
+.hire-us .team-circle .stars-right img:first-child {
+  left: 1rem;
+  top: -5rem;
+}
+.hire-us .team-circle .stars-right img:nth-child(2) {
+  left: 3rem;
+  top: 2rem;
+}
+.hire-us .team-circle .stars-right img:last-child {
+  left: 6rem;
+  top: -1rem;
+}
+.hire-us .hire-us-desc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 3rem auto;
+}
+.hire-us .hire-us-desc p {
+  max-width: 31.25rem;
+  line-height: 1.5rem;
+}
+.hire-us .diamond4 {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 3rem;
+  position: relative;
+}
+.hire-us .diamond4 img {
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 769px) {
+  .hire-us .diamond4 {
+    display: none;
+  }
+}
+.hire-us .hire-us-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.know-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 62em) {
+  .know-us {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .know-us .holder img {
+    width: 100%;
+  }
+}
+.know-us .holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.know-us .holder img {
+  max-width: 80%;
+}
+.know-us .holder h3 {
+  font-family: "Secular One";
+  text-align: center;
+}
+.know-us .holder:hover h3 {
+  color: #E04F4F;
+}
+
+.know-us-txt {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 0;
+}
+.know-us-txt p {
+  font-weight: 400;
+  font-family: "Secular One";
+  font-size: 2rem;
+}
+
+.rudolfs-txt p {
+  font-size: 1.25rem !important;
+}
+
+.rudolfs {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.rudolfs .account-manager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.rudolfs .account-manager img {
+  width: 30%;
+}
+.rudolfs .account-manager .rudolfs-title h4 {
+  margin: 0 !important;
+}
+.rudolfs .account-manager .rudolfs-title p {
+  margin: 2px 0;
+  opacity: 0.5;
+}
+footer {
+  background-color: #10142C;
+}
+footer .appreciate {
+  color: #FFF;
+}
+footer .appreciate h3 {
+  font-family: "Secular One";
+  font-size: 2rem;
+}
+footer .appreciate p {
+  font-size: 1rem;
+}
+
 .intro {
   margin-block: 4rem;
   padding-inline: 2rem;

@@ -16,8 +16,10 @@ li {
 
 .overall {
 background: linear-gradient(#EBEFF6,#FFF);
-max-width:100%;
+width: min(100%, 90rem);
+margin: 0 auto;
 
 
 }
+
 

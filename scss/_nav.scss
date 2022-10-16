@@ -1,8 +1,16 @@
 nav {
+    position:relative;
+    
 
     .wrapper {
         @include flex(space-between); 
-        padding:1rem 3rem;
+        position: fixed;
+        top: 0;
+        width: min(100%, 90rem);
+        margin: 0 auto;
+        z-index: 99;
+        background-color: #FFF;
+        padding: 1rem 1rem 1rem 0rem;
     }
     .logo a{
         font-family: 'inter',sans-serif;
