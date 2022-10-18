@@ -15,7 +15,7 @@ li {
 }
 
 .overall {
-  background: linear-gradient(#EBEFF6, #FFF);
+  background-color: linear-gradient(#EBEFF6, #FFF);
   width: min(100%, 90rem);
   margin: 0 auto;
 }
@@ -52,7 +52,6 @@ li {
   width: min(100%, 90rem);
   margin: 0 auto;
   z-index: 99;
-  background-color: #FFF;
   padding: 1rem 1rem 1rem 0rem;
 }
 .navbar .wrapper .logo a {
@@ -62,7 +61,7 @@ li {
   color: #E04F4F;
 }
 .navbar .wrapper nav .nav-links {
-  background-color: white;
+  background-color: #FFF;
   position: absolute;
   right: 0;
   top: -3vh;
